@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VANE JEWELLS</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/all.css" />
+  </head>
+
+  <body class="preload">
+    <!--                             LOGIN MENU                          -->
+    <div class="login">
+      <i class="login__close" data-feather="x"></i>
+      <div class="login__wrapper">
+        <p class="login__header flex-center">Log In</p>
+        <div class="login__option">
+          <p id="login__opt">Log In</p>
+          <p id="register__opt">Criar uma conta</p>
+        </div>
+        <form class="login__form">
+          <label class="login__fields" for="">Email *</label>
+          <input
+            type="email"
+            class="login__email"
+            placeholder="Introduza o seu email aqui"
+          />
+          <label class="login__fields" for="">Palavra-passe*</label>
+          <input
+            type="password"
+            class="login__password"
+            placeholder="Introduza a palavra-passe"
+          />
+          <p class="login__forgot">Esqueceu-se da sua palavra-passe?</p>
+          <button class="login__submit">Log In</button>
+        </form>
+        <div class="help flex-center">
+          <p class="help__header">Preciso de ajuda</p>
+          <p class="help__contact">
+            Poderá contactar-nos através de um dos seguintes meios.
+          </p>
+          <p class="help__subheader"><span></span>Contacte-nos</p>
+          <p class="help__messenger flex-center">
+            <i class="help__icon" data-feather="message-circle"></i>Messenger
+          </p>
+          <p class="help__email flex-center">
+            <i class="help__icon" data-feather="mail"></i>
+            <a href="mailto:nunopduartes@gmail.com">Email</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--                           HAMBURGER MENU                       -->
+    <div class="hamburger">
+      <i class="hamburger__close toggle--menu" data-feather="x"></i>
+      <ul class="hamburger__pages">
+        <li class="hamburger__selection">
+          <a
+            class="hamburger__link heading-font active--link"
+            href="#index.html"
+            >New in</a
+          >
+        </li>
+        <li id="login" class="hamburger__selection">
+          <a class="hamburger__link heading-font" href="#index.html">
+            Minha Conta
+            <ul class="hamburger__subpages">
+              <li>Perfil</li>
+              <li>Morada</li>
+              <li>Segurança</li>
+            </ul>
+          </a>
+        </li>
+        <li class="hamburger__selection">
+          <a class="hamburger__link heading-font" href="produtos.html"
+            >Coleção</a
+          >
+        </li>
+        <li class="hamburger__selection">
+          <a class="hamburger__link heading-font" href="#index.html"
+            >Sobre nós</a
+          >
+        </li>
+      </ul>
+      <hr />
+      <div class="hamburger__bottom">
+        <ul>
+          <li><a href="">Ajuda</a></li>
+          <li><a href="">Lojas</a></li>
+          <li><a href="">Newsletter</a></li>
+          <li><a href="">Descarregue a nossa app</a></li>
+          <li><a href="">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--                 SEARCH MODAL                 -->
+    <div class="search flex-center">
+      <div class="search__wrapper">
+        <i class="search__close" data-feather="x"></i>
+        <img
+          src="img/logo-letter-svg.svg"
+          class="search__logo"
+          alt="VaneJewels Logo"
+        />
+        <input
+          type="text"
+          class="search__submit"
+          placeholder="Procure na loja aqui..."
+        />
+      </div>
+    </div>
+    <!--                                ROOT                             -->
+    <div class="root">
+      <!-- LOADING-->
+      <div class="loader__wrapper" id="loader-wrapper">
+        <img src="img/logo-letter-svg.svg" alt="" />
+      </div>
+      <!--                           HEADER                            -->
+
+      <header class="header">
+        <div class="header__wrapper" id="header-id">
+          <div class="header__promocode flex-center">
+            <p href="">
+              Use o código: VANENEW - para 10% de desconto no final do carrinho
+            </p>
+          </div>
+          <div class="menu">
+            <div class="mobile__left">
+              <i class="mobile__hamburger toggle--menu" data-feather="menu"></i>
+              <i class="mobile__like" data-feather="heart"></i>
+            </div>
+            <div class="mobile__logo flex-center">
+              <a class="logo__link flex-center" flex-center" href="index.html">
+                <img src="img/logo-svg.svg" id="logo" alt="VaneJewels Logo" />
+              </a>
+            </div>
+            <div class="desktop__menu">
+              <div class="desktop__container">
+                <ul class="desktop__links">
+                  <li class="desktop__page" desktop--active>
+                    <a href="produtos.html">New in</a>
+                  </li>
+                  <li class="desktop__page"><a href="">Minha Conta</a></li>
+                  <li class="desktop__page">
+                    <a href="produtos.html">Coleção</a>
+                  </li>
+                  <li class="desktop__page">
+                    <a href="produtos.html">Sobre nós</a>
+                  </li>
+                </ul>
+                <div class="desktop__icons">
+                  <i class="menu__search" data-feather="search"></i>
+                  <i class="menu__user" data-feather="user"></i>
+                  <i class="menu__cart" data-feather="shopping-cart"> </i
+                  ><span class="cart__counter"></span>
+                </div>
+              </div>
+            </div>
+            <div class="mobile__right">
+              <i class="menu__search" data-feather="search"></i>
+              <i class="menu__cart" data-feather="shopping-cart"></i
+              ><span class="cart__counter"></span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!--                          BODY LANDING PAGE                     -->
+
+      <!--                          BODY LANDING PAGE                     -->
+      <main class="main">
+        <div class="product__wrapper">
+          <a href="index.html" class="product__return"><span>Voltar</span></a>
+          <div class="product__container">
+            <img class="product__secondary" src="img/ear1.jpg" alt="" />
+            <img class="product__main" src="img/ear2.jpg" alt="" />
+            <div class="product__description">
+              <p class="details__header">Brasão Pendente</p>
+              <p class="details__title">
+                Gold necklace, part of the Escudo collection designed by Fado
+                singer Ana Moura.
+              </p>
+              <p class="details__about">
+                Silver necklace, part of the Escudo collection designed by Fado
+                singer Ana Moura. A unisex jewelry collection inspired by the
+                Portuguese Escudo, the symbol of our nation since the 15th
+                century. 20% of sales will be donated to the fund Solidariedade
+                com a Cultura, aimed to support artists affected by Covid-19.
+              </p>
+              <p class="details__characteristic">
+                Silver 925‰ necklace with 45,0cm and 2,2gr. Pendant with 1,5cm.
+                Handmade in Portugal.
+              </p>
+              <div class="buy__wrapper">
+                <div class="buy__price">
+                  <p class="initial__price">8,99€</p>
+                  <span class="discount__price">6,99€</span>
+                </div>
+                <div class="quantity__wrapper">
+                  <input type="text" class="quantity__value" placeholder="1" />
+                  <button type="button" class="quantity__submit">BUY</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      -
+
+      <!--                               FOOTER                          -->
+      <footer class="footer">
+        <hr />
+        <ul class="footer__atendimento">
+          <li>
+            <details class="footer__dropdown">
+              <summary class="heading-font flex-center">
+                <span>Atendimento ao Cliente</span
+                ><i class="footer--drop" data-feather="chevron-down"></i>
+              </summary>
+              <li class="footer__item">Tel: 912 765 610</li>
+              <li class="footer__item">Email: vanejewels@gmail.com</li>
+              <li class="footer__item">Devoluções</li>
+              <li class="footer__item">Lojas</li>
+            </details>
+          </li>
+        </ul>
+        <hr />
+        <ul class="footer__sobre">
+          <li>
+            <details class="footer__dropdown">
+              <summary class="heading-font flex-center">
+                <span>Sobre nós</span
+                ><i class="footer--drop" data-feather="chevron-down"></i>
+              </summary>
+              <li class="footer__item">Quem somos</li>
+              <li class="footer__item">Noticias</li>
+              <li class="footer__item">Trabalhar connosco</li>
+            </details>
+          </li>
+        </ul>
+        <hr />
+        <ul class="footer_paginas">
+          <li>
+            <details class="footer__dropdown">
+              <summary class="heading-font flex-center">
+                <span>Páginas</span
+                ><i class="footer--drop" data-feather="chevron-down"></i>
+              </summary>
+              <li class="footer__item">Account</li>
+              <li class="footer__item">New-in</li>
+              <li class="footer__item">Collections</li>
+              <li class="footer__item">About</li>
+            </details>
+          </li>
+        </ul>
+        <hr />
+        <div class="footer__social">
+          <ul class="footer__network">
+            <li>
+              <a href="" class="icon footer__icon"
+                ><img src="img/facebook-icon.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="" class="icon footer__icon"
+                ><img src="img/instagram-icon.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="" class="icon footer__icon"
+                ><img src="img/twitter-icon.jpg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <p>Termos e condições</p>
+          <p>Política de uso e privacidade</p>
+          <p>Política de Cookies</p>
+          <p>Aviso legal</p>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/user.js" type="text/javascript"></script>
+    <script src="js/cart.js" type="text/javascript"></script>
+  </body>
+</html>
