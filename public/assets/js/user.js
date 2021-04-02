@@ -48,7 +48,7 @@ document.querySelector(".login__submit").addEventListener("click", function () {
                 })
             }).then((response) => {
                 if(response.ok) {
-                    window.location.href = "https://vanejewel-backoffice.herokuapp.com/produtos.html" 
+                    window.location.href = "https://vanejewel-frontoffice.herokuapp.com/produtos" 
                 } else {
                     return response.json();
                 }
@@ -69,7 +69,7 @@ document.querySelector(".login__submit").addEventListener("click", function () {
                 })
             }).then(response => {
                 if (response.ok) {
-                    window.location.href = "https://vanejewel-backoffice.herokuapp.com/produtos.html"
+                    window.location.href = "https://vanejewel-frontoffice.herokuapp.com/produtos"
                 } else {
                     return response.json();
                 }
