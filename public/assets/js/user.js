@@ -34,7 +34,7 @@ document.querySelector(".login__submit").addEventListener("click", function () {
         event.preventDefault();
 
         if (!containsQ("hidden", register)) {
-            fetch('http://localhost:3000/user/register', {
+            fetch('https://vanejewel-backoffice.herokuapp.com/user/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -48,7 +48,7 @@ document.querySelector(".login__submit").addEventListener("click", function () {
                 })
             }).then((response) => {
                 if(response.ok) {
-                    window.location.href = "http://localhost:4000/produtos.html" 
+                    window.location.href = "https://vanejewel-backoffice.herokuapp.com/produtos.html" 
                 } else {
                     return response.json();
                 }
